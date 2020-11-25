@@ -15,7 +15,6 @@
 		"url": "https://github.com/dmitribd/nativescript-yandex-appmetrica.git"
 	},
 	"scripts": {
-		"preinstall": "npm i",
 		"tsc": "npm i && tsc",
 		"build": "npm run tsc && npm run build.native",
 		"build.native": "node src/scripts/build-native.js",
