@@ -2,8 +2,8 @@
 	"name": "nativescript-yandex-appmetrica",
 	"version": "1.0.0",
 	"description": "Nativescript Library for AppMetrica SDK",
-	"main": "src/AppMetricaSDK.js",
-	"typings": "src/index.d.ts",
+	"main": "AppMetricaSDK",
+	"typings": "index.d.ts",
 	"nativescript": {
 		"platforms": {
 			"android": "6.0.0",
@@ -17,7 +17,7 @@
 	"scripts": {
 		"tsc": "npm i && tsc",
 		"build": "npm run tsc && npm run build.native",
-		"build.native": "node src/scripts/build-native.js",
+		"build.native": "node scripts/build-native.js",
 		"tslint": "cd  && tslint \\\"**/*.ts\\\" --config tslint.json --exclude \\\"**/node_modules/**\\\"",
 		"ci.tslint": "npm i && tslint '**/*.ts' --config 'tslint.json' --exclude '**/node_modules/**' --exclude '**/platforms/**'",
 		"prepack": "npm run build.native",
